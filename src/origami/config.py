@@ -1,0 +1,4 @@
+EPS = 1e-3
+
+DEFAULT_PAPER_FRONT_COLOR = "white"
+DEFAULT_PAPER_BACK_COLOR = "lightgray"

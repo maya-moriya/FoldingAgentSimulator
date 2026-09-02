@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "foldingagent-simulator"
+version = "0.1.0"
+description = "Origami folding simulation engine for FoldingAgent: Inferring Parametric Origami Procedures from Demonstration Videos"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Maya Moriya" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "numpy>=1.24",
+    "networkx>=3.0",
+    "matplotlib>=3.7",
+    "plotly>=5.18",
+    "pillow>=10.0",
+    "ipykernel>=7.3.0",
+    "nbformat>=4.2.0",
+]
+
+[project.urls]
+Repository = "https://github.com/maya-moriya/FoldingAgentSimulator"
+
+[project.optional-dependencies]
+# Needed to run usage_example.ipynb
+notebook = ["jupyter>=1.0", "ipykernel>=6.29"]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+packages = ["origami"]
